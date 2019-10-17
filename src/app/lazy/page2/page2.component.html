@@ -1,0 +1,9 @@
+<h1> This is lazy loaded component</h1>
+<h2>TODO LIST</h2>
+<ul>
+    <li *ngFor="let todo of list">{{todo.value}} </li>
+    
+</ul>
+<p *ngIf="!list.length">No data found</p>
+<h2>Below content is from Shared module component</h2>
+<app-com-card></app-com-card>
